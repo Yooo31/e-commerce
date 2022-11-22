@@ -28,7 +28,7 @@ Route::get('/cart', 'HomeController@cart') -> name('cart.index');
 // Checkout
 
 Route::get('/checkout', 'HomeController@checkout') -> name('checkout.index');
-Route::get('/checkout/success', 'HomeController@checkoutsuccess') -> name('checkout.success');
+Route::get('/checkout/success', 'HomeController@success') -> name('checkout.success');
 
 
 // Orders
