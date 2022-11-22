@@ -41,7 +41,7 @@
                 </a>
 							</li>
 							<li class="nav-item">
-                <a class="nav-link" href="">
+                <a class="nav-link" href="{{ route('orders') }}">
                 <i class="fas fa-truck mr-1"></i>Commander
                 </a>
               </li>
