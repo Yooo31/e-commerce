@@ -13,7 +13,6 @@
   </head>
   <body>
     <div class="flex-center position-ref full-height">
-      @include('layouts.header')
       @yield('content')
     </div>
   </body>
