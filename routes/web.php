@@ -19,7 +19,7 @@ Route::get('/contact', 'HomeController@contact') -> name('contact');
 // Shop
 
 Route::get('/shop', 'HomeController@shop') -> name('shop.index');
-Route::get('/shop/single-product', 'HomeController@shopshow') -> name('shop.show');
+Route::get('/shop/single-product', 'HomeController@product') -> name('shop.show');
 
 // Basket
 
