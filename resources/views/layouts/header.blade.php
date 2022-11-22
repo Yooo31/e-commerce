@@ -19,7 +19,7 @@
                 </a>
               </li>
 							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								<a href="{{ route('shop.index') }}" class="nav-link dropdown-toggle">
                   <i class="fas fa-shopping-bag mr-2"></i>Shop
                 </a>
 							</li>
@@ -36,7 +36,7 @@
                 </a>
               </li>
 							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								<a href="#" class="nav-link dropdown-toggle">
                   <i class="fas fa-sign-in-alt mr-1"></i>Connexion
                 </a>
 							</li>
