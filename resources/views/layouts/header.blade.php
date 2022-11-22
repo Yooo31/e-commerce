@@ -46,7 +46,7 @@
                 </a>
               </li>
 							<li class="nav-item">
-                <a class="nav-link" href="contact">
+                <a class="nav-link" href="{{ route('cart.index') }}">
                 <i class="fas fa-shopping-cart mr-1"></i>Panier
                 </a>
               </li>
