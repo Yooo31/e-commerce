@@ -2,14 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use App\Product;
 use Illuminate\Http\Request;
 
 class ShopController extends Controller {
   public function index() {
     $products = Product::all();
+    $categories = Category::all();
+
     return view('shop', [
-      'products' => $products
+      'products' => $products,
+      'categories' => $categories
     ]);
   }
 
@@ -21,9 +25,11 @@ class ShopController extends Controller {
    */
   public function show($slug) {
     $product = Product::where('slug', $slug)->firstOrFail();
+    $category = Category::where('id', $product->category_id)->firstOrFail();
 
     return view('product', [
-      'product' => $product
+      'product' => $product,
+      'category' => $category
     ]);
   }
 
